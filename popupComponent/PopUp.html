@@ -1,12 +1,15 @@
 <template id="pop-up-template">
+
     <link rel="stylesheet" href="/popupComponent/PopUp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <div class="pop-up-container">
         <button id="pop-up-button">Pop-up!</button>
         <div class="pop-up">
             <section class="top">
                 <h5>
-                    <i id="icon" ></i>
+                    <i id="icon" class="" ></i>
+                    
                     <span id="success-message"></span>
                 </h5>
             </section>
@@ -15,8 +18,8 @@
                 </p>
             </section>
             <section class="bottom">
-                <button id="cancel">Cancel</button>
-                <button id="continue">Continue</button>
+                <button id="cancel" class="popup-buttons">Cancel</button>
+                <button id="continue" class="popup-buttons">Continue</button>
             </section>
         </div>
     </div>

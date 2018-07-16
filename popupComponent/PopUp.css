@@ -4,23 +4,32 @@
 }
 
 button {
-    border:rgb(206, 206, 206) 3px solid;
+    border: #3a3939 2px solid;
     border-radius: 5px;
     background:rgb(240, 240, 240);
     color:black;
-    font-size:1rem;
-    margin:10px;
-    padding:5px 10px;
+    font-size:0.8rem;
+    margin:10px 0;
+    padding:10px 10px;
+    font-weight: 900;
+}
+button:hover{
+    border-color:white;
+}
+
+#pop-up-button{
+    width:200px;
 }
 
 .pop-up{
-    visibility: hidden;
+    visibility: hidden;         
     background:rgb(228, 228, 228);
     width:auto;
     margin:0 auto;
     max-width: 90%;
     text-align: center;
-    border-radius: 5px;
+    font-family:sans-serif;
+    color:#3a3939;
 }
 
 .visible{
@@ -29,22 +38,53 @@ button {
 
 .top{
     padding:5px;
+    font-size:1.3rem;
+}
+
+.middle{
+    padding:0 10px;
+    margin:0 10px;
 }
 
 .bottom{
     padding:5px;
     padding-bottom:20px;
+    text-align:center;
 }
 
 #icon{
-    color:white;
+    color:black;
     font-size:32px;
+
+
+color:green;
+padding:10px;
 }
-.red-icon{
+
+/* .red-icon{
     color:red;
 }
 
 .green-icon{
     color:green;
+} */
+
+#continue{
+    color:white;
+    background:#3a3939;
+    font-size:0.8rem;
+    font-weight:900;
+}
+#cancel{
+    color:#3a3939;
+    font-size:0.8rem;
+    font-weight:900;
 }
 
+.popup-buttons{
+    width:80%;
+}
+
+.popup-buttons:hover{
+    border-color:white;
+}
