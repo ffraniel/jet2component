@@ -1,0 +1,50 @@
+.pop-up-container{
+    background:red;
+    text-align: center;
+}
+
+button {
+    border:rgb(206, 206, 206) 3px solid;
+    border-radius: 5px;
+    background:rgb(240, 240, 240);
+    color:black;
+    font-size:1rem;
+    margin:10px;
+    padding:5px 10px;
+}
+
+.pop-up{
+    visibility: hidden;
+    background:rgb(228, 228, 228);
+    width:auto;
+    margin:0 auto;
+    max-width: 90%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.visible{
+    visibility:visible;
+}
+
+.top{
+    padding:5px;
+}
+
+.bottom{
+    padding:5px;
+    padding-bottom:20px;
+}
+
+#icon{
+    color:white;
+    font-size:32px;
+}
+.red-icon{
+    color:red;
+}
+
+.green-icon{
+    color:green;
+}
+

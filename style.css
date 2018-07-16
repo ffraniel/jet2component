@@ -1,0 +1,41 @@
+html, body{
+    width:100%;
+    margin:0 auto;
+    height:100vh;
+    max-height:100%;
+    background:red;
+}
+h3 {
+    font-size:1rem;
+}
+
+h1{
+    font-size:2rem;
+}
+
+.main{
+    width:100vw;
+    max-width:100%;
+
+    color:white;    
+    font-family: sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.main .title{
+    padding:10px 0;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    padding-left:20px;
+}
+
+.main .sub-title {
+    background:#626262;
+    text-align:center;
+    padding:10px 0;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    font-size:0.9rem;
+    margin-bottom:20px;
+}
