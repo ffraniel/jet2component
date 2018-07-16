@@ -12,6 +12,7 @@ button {
     margin:10px 0;
     padding:10px 10px;
     font-weight: 900;
+    font-style: italic;
 }
 button:hover{
     border-color:white;
@@ -87,4 +88,15 @@ padding:10px;
 
 .popup-buttons:hover{
     border-color:white;
+}
+
+@media (min-width:767px){
+    .bottom{
+        display:flex;
+        
+    }
+    .popup-buttons{
+        flex:1;
+        margin:10px;
+    }
 }
