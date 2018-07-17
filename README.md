@@ -41,4 +41,4 @@ I have made the component accept an input value to determine whether the booking
 
 Thanks for looking.
 
-### Francis Whitehead
+## Francis Whitehead
