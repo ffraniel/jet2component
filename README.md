@@ -13,7 +13,7 @@ If you do not have NPM already installed please follow this guide to set it up -
 
 To check if git is installed on your machine please enter the following commitng in your terminal window:
 
-```git --version```
+```git -v```
 
 If you do not already have git installed on your machine please follow this guide --> https://git-scm.com/ .
 
