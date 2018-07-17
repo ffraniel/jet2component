@@ -23,18 +23,29 @@ button:hover{
 }
 
 .pop-up{
-    visibility: hidden;         
+    opacity:0;
+    width:0;
+    height:0;
+    transition: width 0.2s, height 0.2s, opacity 0.5s, color 0.2s;
     background:rgb(228, 228, 228);
-    width:auto;
     margin:0 auto;
-    max-width: 90%;
     text-align: center;
     font-family:sans-serif;
-    color:#3a3939;
+    color:rgba(151, 151, 151, 0);
+    
 }
 
 .visible{
     visibility:visible;
+}
+.grow-fade{
+    background:rgb(228, 228, 228);
+    width:90%;
+    height:auto;
+    max-width: 90%;
+    transition: width 0.2s, height 0.2s, opacity 0.05s;
+    opacity:1;
+    color:#3a3939;
 }
 
 .top{
@@ -53,22 +64,15 @@ button:hover{
     text-align:center;
 }
 
-#icon{
-    color:black;
-    font-size:32px;
-
-
-color:green;
-padding:10px;
-}
-
-/* .red-icon{
-    color:red;
-}
-
-.green-icon{
+#success-icon img{
+    height:28px;
+    width:28px;
+    padding:10px;
+    position:relative;
+    top:15px;
     color:green;
-} */
+
+}
 
 #continue{
     color:white;

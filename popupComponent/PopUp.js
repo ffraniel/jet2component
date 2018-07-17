@@ -19,17 +19,21 @@ class PopUp extends HTMLElement {
 
       openPopUp(){
           this.shadowRoot.querySelector('.pop-up').classList.add('visible');
+          this.shadowRoot.querySelector('.pop-up').classList.add('grow-fade');
       }
 
       closePopUp(){
-        this.shadowRoot.querySelector('.pop-up').classList.remove('visible');
+        this.shadowRoot.querySelector('.pop-up').classList.remove('grow-fade');
+        console.log("here")
+        setTimeout(()=>{
+          this.shadowRoot.querySelector('.pop-up').classList.remove('visible');
+        }, 2000)
+        
       }
 
       render(success){
         if(success === "true"){
-
-          this.shadowRoot.querySelector('#icon').classList.add('fa');
-          this.shadowRoot.querySelector('#icon').classList.add('fa-check-circle');
+          this.shadowRoot.querySelector('#success-icon').innerHTML = `<img src="/popupComponent/correct.svg" alt="success tick">`;
 
           this.shadowRoot.querySelector('#success-message').innerHTML = "Congratulations your jet2 holiday booking has been confirmed";
           this.shadowRoot.querySelector('#success-text').innerHTML = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -43,9 +47,7 @@ class PopUp extends HTMLElement {
           this.shadowRoot.querySelector('#continue').addEventListener('click', this.closePopUp);
         }
         else if (success === "false"){
-          this.shadowRoot.querySelector('#icon').classList.add('fas');
-          this.shadowRoot.querySelector('#icon').classList.add('fa-times');
-          this.shadowRoot.querySelector('#icon').classList.add('red-icon');
+          this.shadowRoot.querySelector('#success-icon').innerHTML = `<img src="/popupComponent/cross.svg" alt="error cross">`;
 
           this.shadowRoot.querySelector('#success-message').innerHTML = "Sorry, something appears to have gone wrong. Please try again";
           this.shadowRoot.querySelector('#success-text').innerHTML = `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -59,7 +61,6 @@ class PopUp extends HTMLElement {
           this.shadowRoot.querySelector('#continue').addEventListener('click', this.closePopUp);
         }
       }
-    
   }
   
   customElements.define('pop-up', PopUp);
